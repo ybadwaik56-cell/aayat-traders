@@ -1,1 +1,79 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
 
+body{
+background:#f7f7f7;
+}
+
+.top-bar{
+background:#021B49;
+color:#fff;
+padding:10px 0;
+font-size:14px;
+}
+
+.top-bar .container{
+width:90%;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.top-bar a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
+
+.quote-btn{
+background:#FFC107;
+padding:8px 18px;
+color:#000!important;
+border-radius:6px;
+font-weight:600;
+}
+
+.navbar{
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+padding:18px 0;
+}
+
+.navbar .container{
+width:90%;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo h2{
+color:#0A2B6B;
+font-weight:700;
+}
+
+.logo span{
+color:#FFC107;
+}
+
+.nav-links{
+display:flex;
+list-style:none;
+gap:35px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#222;
+font-weight:600;
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:#FFC107;
+}
