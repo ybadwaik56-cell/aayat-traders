@@ -1,106 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aayat Traders | Building Material Supplier</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aayat Traders | Building Material Supplier in Nagpur</title>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fff;
+    color:#333;
+}
+
+.topbar{
+    background:#0A2240;
+    color:#fff;
+    padding:10px;
+    text-align:center;
+    font-size:14px;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#fff;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#0A2240;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:bold;
+}
+
+.hero{
+    height:90vh;
+    background:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1600');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 30px;
+    background:#F5B301;
+    color:#000;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    color:#0A2240;
+    font-size:38px;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+    text-align:center;
+}
+
+.why{
+    background:#f7f7f7;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.feature{
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.feature i{
+    font-size:40px;
+    color:#F5B301;
+    margin-bottom:15px;
+}
+
+.about{
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.contact{
+    background:#0A2240;
+    color:white;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.contact h3{
+    margin-bottom:15px;
+}
+
+iframe{
+    width:100%;
+    height:300px;
+    border:none;
+}
+
+footer{
+    background:#06152b;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:30px;
+    text-decoration:none;
+    z-index:999;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:40px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+nav{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.contact-grid{
+    grid-template-columns:1fr;
+}
+}
+</style>
 </head>
 <body>
 
-    <!-- Top Bar -->
-    <div class="topbar">
-        <span><i class="fas fa-map-marker-alt"></i> Nagpur</span>
-        <span><i class="fas fa-phone"></i> 9552730751</span>
-    </div>
+<div class="topbar">
+📍 Naka No.2, Near Pal Medical, Khasara Kamptee Road, Nagpur |
+📞 9552730751 | 7798579558
+</div>
 
-    <!-- Navbar -->
-    <nav>
-        <h2>Aayat Traders</h2>
+<nav>
+<div class="logo">AAYAT TRADERS</div>
 
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Building Strong Foundations</h1>
+<section class="hero" id="home">
+<div class="hero-content">
+<h1>AAYAT TRADERS</h1>
 
-            <p>
-                Trusted supplier of Cement, Bricks,
-                Sand and Aggregate in Nagpur.
-            </p>
+<p>
+Trusted Supplier of Cement, Bricks, Sand &
+Aggregate (Gitti) in Nagpur
+</p>
 
-            <a href="#products" class="btn">View Products</a>
-        </div>
-    </section>
+<a href="#products" class="btn">Explore Products</a>
+</div>
+</section>
 
-    <!-- Products -->
-    <section id="products">
+<section id="products">
+<h2 class="section-title">Our Products</h2>
 
-        <h2>Our Products</h2>
+<div class="products">
 
-        <div class="cards">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=600" alt="">
+<div class="card-content">
+<h3>Cement</h3>
+<p>Premium quality cement for all construction needs.</p>
+</div>
+</div>
 
-            <div class="card">
-                <h3>Cement</h3>
-                <p>Premium quality cement brands.</p>
-            </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600" alt="">
+<div class="card-content">
+<h3>Bricks</h3>
+<p>Strong and durable bricks for long-lasting structures.</p>
+</div>
+</div>
 
-            <div class="card">
-                <h3>Bricks</h3>
-                <p>Strong and durable bricks.</p>
-            </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1626885930974-4b69aa21bbf9?w=600" alt="">
+<div class="card-content">
+<h3>Sand</h3>
+<p>High-quality construction sand available in bulk.</p>
+</div>
+</div>
 
-            <div class="card">
-                <h3>Sand</h3>
-                <p>Best quality construction sand.</p>
-            </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?w=600" alt="">
+<div class="card-content">
+<h3>Aggregate (Gitti)</h3>
+<p>Reliable aggregate materials for strong foundations.</p>
+</div>
+</div>
 
-            <div class="card">
-                <h3>Aggregate (Gitti)</h3>
-                <p>Reliable material for foundations.</p>
-            </div>
+</div>
+</section>
 
-        </div>
+<section class="why">
+<h2 class="section-title">Why Choose Us?</h2>
 
-    </section>
+<div class="features">
 
-    <!-- About -->
-    <section class="about">
+<div class="feature">
+<i class="fas fa-award"></i>
+<h3>Premium Quality</h3>
+</div>
 
-        <h2>About Aayat Traders</h2>
+<div class="feature">
+<i class="fas fa-truck"></i>
+<h3>Fast Delivery</h3>
+</div>
 
-        <p>
-            We supply high quality construction materials
-            throughout Nagpur. Our commitment is quality,
-            affordability and timely delivery.
-        </p>
+<div class="feature">
+<i class="fas fa-tags"></i>
+<h3>Best Prices</h3>
+</div>
 
-    </section>
+<div class="feature">
+<i class="fas fa-users"></i>
+<h3>Trusted Supplier</h3>
+</div>
 
-    <!-- Contact -->
-    <section class="contact">
+</div>
+</section>
 
-        <h2>Contact Us</h2>
+<section id="about">
+<h2 class="section-title">About Aayat Traders</h2>
 
-        <p>📞 9552730751</p>
-        <p>📞 7798579558</p>
+<div class="about">
+<p>
+Aayat Traders is a trusted building material supplier located in Nagpur.
+We provide high-quality cement, bricks, sand, and aggregate materials for
+residential, commercial, and industrial construction projects.
+Our commitment is to deliver quality products at competitive prices with
+timely service and complete customer satisfaction.
+</p>
+</div>
+</section>
 
-        <p>
-            📍 Naka No.2, Near Pal Medical,
-            Khasara Kamptee Road, Nagpur
-        </p>
+<section class="contact" id="contact">
+<h2 class="section-title" style="color:white;">Contact Us</h2>
 
-    </section>
+<div class="contact-grid">
+
+<div>
+<h3>Business Information</h3>
+
+<p><strong>Aayat Traders</strong></p>
+<br>
+
+<p>📞 9552730751</p>
+<p>📞 7798579558</p>
+
+<br>
+
+<p>
+📍 Naka No.2, Near Pal Medical,<br>
+Khasara Kamptee Road,<br>
+Nagpur
+</p>
+</div>
+
+<div>
+<iframe
+src="https://maps.google.com/maps?q=nagpur&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2025 Aayat Traders. All Rights Reserved.
+</footer>
+
+<a class="whatsapp"
+href="https://wa.me/919552730751"
+target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
 
 </body>
 </html>
